@@ -1,0 +1,69 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Tahoma, sans-serif;
+}
+
+#box {
+	overflow: hidden;
+	height: 100vh;
+	position: relative;	
+}
+
+.slider {
+	position: absolute;
+	height: 100%;
+    width: 100%;
+}
+
+.slide {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+}
+
+.slide img {
+	width: 100%;
+	min-height: 100%;
+}
+
+.caption {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 999;
+	text-align: center;
+    margin: 0 auto;
+	left: 0;
+	right: 0;
+	font-size: 5rem;
+	text-transform: uppercase;
+	color: #fff;
+    width: 60%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.arrows a {
+	top:50%;
+	transform: translateY(-50%);
+	font-size: 3rem;
+	color: #fff;
+}
+
+.arrows a:hover {
+	color: #333;
+}
+
+.prev {
+    display: none;
+	position: absolute;
+	left: 0;
+	z-index: 999;
+}
+
+.next {
+	position: absolute;
+	right: 0;
+	z-index: 999;
+}
+
